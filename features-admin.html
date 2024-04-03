@@ -16,7 +16,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="features-course.html">Course Mods</a></li>
-        <li><a href="features-admin.html">Admin Mods</a></li>
+        <li><a class="active" href="#">Admin Mods</a></li>
         <li><a href="features-other.html">Other Mods</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -28,6 +28,147 @@
         <p>
           The following features are mods to areas within a root
           account/sub-account which are only accessible by Canvas admins.
+        </p>
+        <ul>
+          <li>
+            Global Navigation Admin Menu
+            <ul>
+              <li>
+                Add quick access admin links (course search, people search, and
+                some account links)*
+              </li>
+            </ul>
+          </li>
+          <li>
+            Course Search
+            <ul>
+              <li>
+                Prevent input for "Show only blueprint courses" from filling to
+                the end of the page in desktop view
+              </li>
+              <li>
+                Add additional search inputs (published/unpublished, sort by
+                Canvas course ID)
+              </li>
+              <li>Add the course code to the course search results*</li>
+              <li>
+                Add concluded icon to course names in search results that are
+                concluded*
+              </li>
+              <li>Convert subaccount name in search results to link*$</li>
+              <li>
+                Convert number of students in search results to link to People
+                in course
+              </li>
+              <li>Add a "View Grades" button to the course search results</li>
+            </ul>
+          </li>
+          <li>
+            People
+            <ul>
+              <li>
+                User Account Details
+                <ul>
+                  <li>
+                    Course Enrollments Box
+                    <ul>
+                      <li>Set box to be resizable</li>
+                      <li>Set a default height</li>
+                      <li>Sort enrollments by status, term, and role</li>
+                      <li>
+                        Add enrollment filters (course published status,
+                        enrollment status, and term)
+                      </li>
+                      <li>Add course code*</li>
+                      <li>Add Canvas course ID</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Accounts Box
+                    <ul>
+                      <li>Set box to be resizable</li>
+                      <li>Set a default height</li>
+                      <li>Show the admin roles in each account*</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Groups Box
+                    <ul>
+                      <li>Set box to be resizable</li>
+                      <li>Set a default height</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Avatar Image
+                    <ul>
+                      <li>
+                        Set to be resizable by dragging the corner and/or
+                        clicking it
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Add link to grades for active courses</li>
+                </ul>
+              </li>
+              <li>
+                User Grades
+                <ul>
+                  <li>Update name and headings to reflect the user*</li>
+                </ul>
+              </li>
+              <li>
+                Profile Pictures
+                <ul>
+                  <li>Set images to be resizable by dragging the corner</li>
+                  <li>
+                    Adjust style to be rounded square instead of circle to show
+                    more of the background
+                  </li>
+                  <li>Change the default image size</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Rubrics
+            <ul>
+              <li>Add a search feature</li>
+              <li>Add drag-and-drop criteria rows feature</li>
+              <li>Add import rubric criteria feature*</li>
+              <li>Add rubric associations report on rubric page*</li>
+            </ul>
+          </li>
+          <li>
+            Question Banks
+            <ul>
+              <li>Add a search feature</li>
+            </ul>
+          </li>
+          <li>
+            Sub-accounts
+            <ul>
+              <li>Show Canvas account ID</li>
+              <li>Show SIS account ID*</li>
+            </ul>
+          </li>
+          <li>
+            Terms
+            <ul>
+              <li>Show the Canvas Term ID</li>
+              <li>[DEPRECATED] Add a search feature</li>
+              <li>[DEPRECATED] Move the add term button to the top</li>
+            </ul>
+          </li>
+          <li>
+            SIS Import
+            <ul>
+              <li>Add SIS History Log*</li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          * - <em>Uses the Canvas LMS REST API</em><br />
+          $ - <em>Requires manage account settings permission</em>
         </p>
       </section>
     </main>
