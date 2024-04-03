@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img.center {
+  margin: 0 auto;
+  display: block;
+}
+
+header, footer {
+  background-color: rgb(185, 231, 237);
+  padding: 1rem;
+}
+
+header img {
+  width: 80%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+nav {
+  background-color: rgb(90, 90, 90);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+nav ul li a:hover, 
+nav ul li a:focus {
+  background-color: rgb(1, 66, 81);
+  color: white;
+}
+
+nav.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav.top-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav.top-nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+nav.top-nav ul li {
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+nav.top-nav ul li a {
+  display: block;
+  width: 100%;
+}
+
+/*
+.grid-main-with-sidebar {
+  display: grid;
+  grid-template-columns: minmax(min-content, 250px) auto 4rem;
+}
+
+.grid-main-with-sidebar nav.sidebar {
+  background-color: inherit;
+}
+
+.grid-main-with-sidebar nav.sidebar ul {
+  background-color: rgb(236, 236, 236);
+  color: black;
+  margin: 1rem;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 0.5rem;
+}
+
+.grid-main-with-sidebar nav.sidebar li a {
+  display: block;
+  color: black;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.grid-main-with-sidebar nav.sidebar ul li a.active,
+.grid-main-with-sidebar nav.sidebar ul li a:hover, 
+.grid-main-with-sidebar nav.sidebar ul li a:focus {
+  background-color: rgb(1, 66, 81);
+  color: white;
+}
+
+.grid-main-with-sidebar nav.sidebar ul li:first-child a.active,
+.grid-main-with-sidebar nav.sidebar ul li:first-child a:hover, 
+.grid-main-with-sidebar nav.sidebar ul li:first-child a:focus {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.grid-main-with-sidebar nav.sidebar ul li:last-child a.active,
+.grid-main-with-sidebar nav.sidebar ul li:last-child a:hover, 
+.grid-main-with-sidebar nav.sidebar ul li:last-child a:focus {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+*/
+
+body > main > section {
+  padding: 1rem;
+  scroll-margin-top: 8rem;
+}
+
+body > main > section:nth-of-type(even) {
+  background-color: rgb(236, 236, 236);
+}
+/*
+#top {
+  scroll-behavior: smooth;
+}
+
+a.back-to-top {
+  position: -webkit-sticky;
+  position: sticky;
+  place-self: end;
+  bottom: 1rem;
+  margin-top: 60vh;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(1, 66, 81);
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  width: 2rem;
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem 0.5rem 0.25rem;
+}
+
+a.back-to-top:hover, 
+a.back-to-top:focus {
+  color: rgb(1, 66, 81);
+  border-color: rgb(1, 66, 81);
+  background-color: rgb(236, 236, 236);
+}
+*/
+
+footer p {
+  text-align: center;
+}
+
+img.screenshot {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  nav.top-nav ul {
+    flex-direction: row;
+  }
+
+  main section {
+    scroll-margin-top: 3rem;
+  }
+}
