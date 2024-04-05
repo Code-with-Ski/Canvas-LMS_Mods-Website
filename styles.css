@@ -26,6 +26,22 @@ header img {
   border-radius: 10px;
 }
 
+header.logo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.logo-grid img {
+  max-width: 100px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+header.logo-grid h1 {
+  text-align: left;
+}
+
 nav {
   background-color: rgb(90, 90, 90);
 }
@@ -79,52 +95,6 @@ nav.top-nav ul li a {
   width: 100%;
 }
 
-/*
-.grid-main-with-sidebar {
-  display: grid;
-  grid-template-columns: minmax(min-content, 250px) auto 4rem;
-}
-
-.grid-main-with-sidebar nav.sidebar {
-  background-color: inherit;
-}
-
-.grid-main-with-sidebar nav.sidebar ul {
-  background-color: rgb(236, 236, 236);
-  color: black;
-  margin: 1rem;
-  border: 1px solid rgb(90, 90, 90);
-  border-radius: 0.5rem;
-}
-
-.grid-main-with-sidebar nav.sidebar li a {
-  display: block;
-  color: black;
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.grid-main-with-sidebar nav.sidebar ul li a.active,
-.grid-main-with-sidebar nav.sidebar ul li a:hover, 
-.grid-main-with-sidebar nav.sidebar ul li a:focus {
-  background-color: rgb(1, 66, 81);
-  color: white;
-}
-
-.grid-main-with-sidebar nav.sidebar ul li:first-child a.active,
-.grid-main-with-sidebar nav.sidebar ul li:first-child a:hover, 
-.grid-main-with-sidebar nav.sidebar ul li:first-child a:focus {
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-
-.grid-main-with-sidebar nav.sidebar ul li:last-child a.active,
-.grid-main-with-sidebar nav.sidebar ul li:last-child a:hover, 
-.grid-main-with-sidebar nav.sidebar ul li:last-child a:focus {
-  border-radius: 0 0 0.5rem 0.5rem;
-}
-*/
-
 body > main > section {
   padding: 1rem;
   scroll-margin-top: 8rem;
@@ -133,7 +103,7 @@ body > main > section {
 body > main > section:nth-of-type(even) {
   background-color: rgb(236, 236, 236);
 }
-/*
+
 #top {
   scroll-behavior: smooth;
 }
@@ -165,7 +135,6 @@ a.back-to-top:focus {
   border-color: rgb(1, 66, 81);
   background-color: rgb(236, 236, 236);
 }
-*/
 
 footer p {
   text-align: center;
