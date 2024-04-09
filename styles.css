@@ -111,11 +111,17 @@ nav.top-nav ul li a {
 
 body > main > section {
   padding: 1rem;
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 12rem;
 }
 
 body > main > section:nth-of-type(even) {
   background-color: rgb(236, 236, 236);
+}
+
+body > main h2,
+body > main h3,
+body > main h4 {
+  scroll-margin-top: 12rem;
 }
 
 #top {
@@ -166,7 +172,10 @@ img.screenshot {
     flex-direction: row;
   }
 
-  main section {
+  body > main > section,
+  body > main h2,
+  body > main h3,
+  body > main h4 {
     scroll-margin-top: 3rem;
   }
 }
