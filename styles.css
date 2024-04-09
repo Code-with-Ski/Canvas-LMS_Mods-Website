@@ -3,6 +3,8 @@ body {
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
 }
 
 h1 {
@@ -17,7 +19,19 @@ img.center {
 
 header, footer {
   background-color: rgb(185, 231, 237);
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+main {
+  padding-bottom: 4rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 4rem;
 }
 
 header img {
