@@ -31,145 +31,567 @@
         </p>
         <ul>
           <li>
-            Global Navigation Admin Menu
+            <a href="#admin-flyout">Global Navigation Admin Menu</a>
+          </li>
+          <li>
+            <a href="#course-search">Course Search</a>
+          </li>
+          <li>
+            <a href="#people">People</a>
             <ul>
               <li>
-                Add quick access admin links (course search, people search, and
-                some account links)*
+                <a href="#people-account-details">User Account Details</a>
               </li>
+              <li><a href="#people-user-grades">User Grades</a></li>
+              <li><a href="#people-profile-pictures">Profile Pictures</a></li>
             </ul>
           </li>
           <li>
-            Course Search
-            <ul>
-              <li>
-                Prevent input for "Show only blueprint courses" from filling to
-                the end of the page in desktop view
-              </li>
-              <li>
-                Add additional search inputs (published/unpublished, sort by
-                Canvas course ID)
-              </li>
-              <li>Add the course code to the course search results*</li>
-              <li>
-                Add concluded icon to course names in search results that are
-                concluded*
-              </li>
-              <li>Convert subaccount name in search results to link*$</li>
-              <li>
-                Convert number of students in search results to link to People
-                in course
-              </li>
-              <li>Add a "View Grades" button to the course search results</li>
-            </ul>
+            <a href="#rubrics">Rubrics</a>
           </li>
           <li>
-            People
-            <ul>
-              <li>
-                User Account Details
-                <ul>
-                  <li>
-                    Course Enrollments Box
-                    <ul>
-                      <li>Set box to be resizable</li>
-                      <li>Set a default height</li>
-                      <li>Sort enrollments by status, term, and role</li>
-                      <li>
-                        Add enrollment filters (course published status,
-                        enrollment status, and term)
-                      </li>
-                      <li>Add course code*</li>
-                      <li>Add Canvas course ID</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Accounts Box
-                    <ul>
-                      <li>Set box to be resizable</li>
-                      <li>Set a default height</li>
-                      <li>Show the admin roles in each account*</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Groups Box
-                    <ul>
-                      <li>Set box to be resizable</li>
-                      <li>Set a default height</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Avatar Image
-                    <ul>
-                      <li>
-                        Set to be resizable by dragging the corner and/or
-                        clicking it
-                      </li>
-                    </ul>
-                  </li>
-                  <li>Add link to grades for active courses</li>
-                </ul>
-              </li>
-              <li>
-                User Grades
-                <ul>
-                  <li>Update name and headings to reflect the user*</li>
-                </ul>
-              </li>
-              <li>
-                Profile Pictures
-                <ul>
-                  <li>Set images to be resizable by dragging the corner</li>
-                  <li>
-                    Adjust style to be rounded square instead of circle to show
-                    more of the background
-                  </li>
-                  <li>Change the default image size</li>
-                </ul>
-              </li>
-            </ul>
+            <a href="#question-banks">Question Banks</a>
           </li>
           <li>
-            Rubrics
-            <ul>
-              <li>Add a search feature</li>
-              <li>Add drag-and-drop criteria rows feature</li>
-              <li>Add import rubric criteria feature*</li>
-              <li>Add rubric associations report on rubric page*</li>
-            </ul>
+            <a href="#sub-accounts">Sub-accounts</a>
           </li>
           <li>
-            Question Banks
-            <ul>
-              <li>Add a search feature</li>
-            </ul>
+            <a href="#enrollment-terms">Terms</a>
           </li>
           <li>
-            Sub-accounts
-            <ul>
-              <li>Show Canvas account ID</li>
-              <li>Show SIS account ID*</li>
-            </ul>
-          </li>
-          <li>
-            Terms
-            <ul>
-              <li>Show the Canvas Term ID</li>
-              <li>[DEPRECATED] Add a search feature</li>
-              <li>[DEPRECATED] Move the add term button to the top</li>
-            </ul>
-          </li>
-          <li>
-            SIS Import
-            <ul>
-              <li>Add SIS History Log*</li>
-            </ul>
+            <a href="#sis-imports">SIS Imports</a>
           </li>
         </ul>
+      </section>
+
+      <section>
+        <h3 id="admin-flyout">Global Navigation Admin Menu</h3>
+
         <p>
-          * - <em>Uses the Canvas LMS REST API</em><br />
-          $ - <em>Requires manage account settings permission</em>
+          The following features are mods that apply to the admin accounts
+          flyout menu on the global navigation menu.
         </p>
+
+        <details>
+          <summary>Add quick access admin links</summary>
+          <div>
+            <p>
+              This feature adds some quick access items to the Admin flyout
+              menu. It includes a quick access to the course and people search
+              with account, term, and other search options. It also provides
+              direct links to certain pages in the admin area.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="course-search">Course Search</h3>
+
+        <p>
+          The following features are mods that apply to the course search page.
+        </p>
+
+        <details>
+          <summary>Adjust "Show only blueprint courses" input</summary>
+          <div>
+            <p>
+              This fills the extra space after the blueprint button to avoid the
+              extra blank space being treated as part of the button.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add additional search and sort inputs</summary>
+          <div>
+            <p>
+              This adds options to search by published state and to sort by the
+              Canvas course ID. Sorting by the Canvas course ID can help with
+              finding the most recently created courses.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add the course code to the course search results</summary>
+          <div>
+            <p>It adds the course code below the course name.</p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add concluded icon to concluded course names</summary>
+          <div>
+            <p>It adds a locked icon for concluded courses.</p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Convert subaccount name in search results to link</summary>
+          <div>
+            <p>
+              It adds a link to the sub-account if the admin has admin access to
+              that sub-account.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+            <p>
+              <em>Requires manage account settings permission.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add link to People in course</summary>
+          <div>
+            <p>
+              Converts number of students in search results to link to People in
+              course
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add a link to the gradebook within a course</summary>
+          <div>
+            <p>Adds a "View Grades" button to the course search results.</p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="people">People</h3>
+
+        <p>
+          The following features are mods that apply to a People page in the
+          admin accounts.
+        </p>
+
+        <section>
+          <h4 id="people-account-details">User Account Details</h4>
+
+          <p>
+            The following features are mods that apply to the details about a
+            user account in the admin accounts.
+          </p>
+
+          <details>
+            <summary>Add link to "View Grades"</summary>
+            <div>
+              <p>
+                This feature adds a link to view a user's grade on their user
+                details page. The grades page is a quick way to see a summary of
+                a user's current grades in active courses.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Make avatar image resizable</summary>
+            <div>
+              <p>
+                This feature makes the avatar image resizeable. This may be
+                useful if an admin is trying to get a better view of the user's
+                avatar.
+              </p>
+            </div>
+          </details>
+
+          <section>
+            <h5>Course Enrollments Box</h5>
+
+            <p>
+              The following features are mods that apply to the Course
+              Enrollments Box on a user's account details page in the admin
+              account.
+            </p>
+
+            <details>
+              <summary>Set box to be resizable</summary>
+              <div>
+                <p>
+                  This makes the box resizable and allows the user to drag the
+                  corner to adjust the size.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Set a default height</summary>
+              <div>
+                <p>
+                  This allows the user to adjust the default height of this box.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Sort enrollments</summary>
+              <div>
+                <p>
+                  This sorts the enrollments by status and then by term. This
+                  makes it so that the active enrollments appear first within
+                  the box.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Add enrollment filters</summary>
+              <div>
+                <p>
+                  It adds filters based on the term, enrollment state, and
+                  course state.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Add course code</summary>
+              <div>
+                <p>
+                  Adds the course code below the course name for each course
+                  enrollment.
+                </p>
+                <p>
+                  <em>Uses the Canvas LMS REST API to provide this feature.</em>
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Add Canvas course ID</summary>
+              <div>
+                <p>
+                  Adds the Canvas course ID below the course name for each
+                  course enrollment. This can help with making API calls.
+                </p>
+              </div>
+            </details>
+          </section>
+
+          <section>
+            <h5>Accounts Box</h5>
+
+            <p>
+              The following features are mods that apply to the Accounts Box on
+              a user's account details page in the admin account.
+            </p>
+
+            <details>
+              <summary>Set box to be resizable</summary>
+              <div>
+                <p>
+                  This makes the box resizable and allows the user to drag the
+                  corner to adjust the size.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Set a default height</summary>
+              <div>
+                <p>
+                  This allows the user to adjust the default height of this box.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Show the admin roles in each account</summary>
+              <div>
+                <p>
+                  This adds the admin role(s) that the user has within the
+                  account(s).
+                </p>
+                <p>
+                  <em>Uses the Canvas LMS REST API to provide this feature.</em>
+                </p>
+              </div>
+            </details>
+          </section>
+
+          <section>
+            <h5>Groups Box</h5>
+
+            <p>
+              The following features are mods that apply to the Groups Box on a
+              user's account details page in the admin account.
+            </p>
+
+            <details>
+              <summary>Set box to be resizable</summary>
+              <div>
+                <p>
+                  This makes the box resizable and allows the user to drag the
+                  corner to adjust the size.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Set a default height</summary>
+              <div>
+                <p>
+                  This allows the user to adjust the default height of this box.
+                </p>
+              </div>
+            </details>
+          </section>
+        </section>
+
+        <section>
+          <h4 id="people-user-grades">User Grades</h4>
+
+          <p>
+            The following features are mods that apply to a user's grades page.
+          </p>
+
+          <details>
+            <summary>Update name and headings to reflect the user</summary>
+            <div>
+              <p>
+                This feature will update the view to show the appropriate user's
+                information when not looking at your own grades. This helps as a
+                quick summary view for admins, while making the view properly
+                reflect the user.
+              </p>
+              <p>
+                <em>Uses the Canvas LMS REST API to provide this feature.</em>
+              </p>
+            </div>
+          </details>
+        </section>
+
+        <section>
+          <h4 id="people-profile-pictures">Profile Pictures</h4>
+
+          <p>
+            The following features are mods that apply to the Profile Pictures
+            review area in the admin accounts.
+          </p>
+
+          <details>
+            <summary>Set images to be resizable</summary>
+            <div>
+              <p>
+                It makes it so the images are resiable by clicking and dragging
+                the corner.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Adjust image shape style</summary>
+            <div>
+              <p>
+                It makes the images appear square rather than circle to see more
+                of the full image.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Change the default image size</summary>
+            <div>
+              <p>
+                This adjusts the default size of images (larger by default) to
+                make it easier to review.
+              </p>
+            </div>
+          </details>
+        </section>
+      </section>
+
+      <section>
+        <h3 id="rubrics">Rubrics</h3>
+
+        <p>
+          The following features are mods that apply to a Rubrics page in the
+          admin accounts.
+        </p>
+
+        <details>
+          <summary>Add a search feature</summary>
+          <div>
+            <p>
+              This feature adds a search bar to the rubrics page in accounts.
+              This will make it easier to find rubrics when there is a long
+              list.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add drag-and-drop criteria rows feature</summary>
+          <div>
+            <p>
+              This feature allows the user to drag and drop rubric rows when a
+              rubric is in an editing state. If you drag a row up from its
+              current position, it will push the row it is dropped on down. If
+              you drag a row down from its current position, it will push the
+              row it is dropped on up.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add import rubric criteria feature</summary>
+          <div>
+            <p>
+              This feature allows a user to import the rubric details when
+              adding/editing a rubric. The user will need to follow the proper
+              format and can use the sample file as a reference point. They will
+              need to enter/paste the data in the import dialog with the column
+              values separated by a tab. When the data is formatted properly it
+              will load the details into the edit rubric preview. This allows
+              the user to review the imported data and how it was added to the
+              rubric before creating the rubric. This also allows the user to
+              add additional criteria and/or import outcomes.
+            </p>
+
+            <p>There are two import options:</p>
+            <ul>
+              <li>
+                Import: This will keep any exisiting criteria in the rubric and
+                add new rows to the end for the new criteria that are imported.
+              </li>
+              <li>
+                Import and Replace: This will remove any existing criteria from
+                the rubric and add rows for the new criteria that are imported.
+              </li>
+            </ul>
+
+            <p>
+              This feature also adds an export criteria button next to the
+              "Import Details" button. This will allow the user to export the
+              current criteria in the edit view to a tab separated values file
+              that is in the proper format for importing data. This is useful if
+              a user has a rubric started already and is looking to add more
+              criteria and wants to organize the rubric order all at once,
+              especially when working with outcomes. It can also be used to
+              allow the user to get the data from one rubric to use as a
+              starting template for a new rubric and/or to 'make a copy'.
+            </p>
+
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add rubric associations report on rubric page</summary>
+          <div>
+            <p>
+              This feature allows the user to load in details about assignment
+              associations.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="question-banks">Question Banks</h3>
+
+        <p>
+          The following features are mods that apply to the Question Banks page
+          in the admin accounts.
+        </p>
+
+        <details>
+          <summary>Add a search box</summary>
+          <div>
+            <p>
+              This feature adds a search bar to the Question Banks page to make
+              it easier to filter the list question banks.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="sub-accounts">Sub-accounts</h3>
+
+        <p>
+          The following features are mods that apply to the Sub-accounts page in
+          the admin accounts.
+        </p>
+
+        <details>
+          <summary>Show Canvas Account ID</summary>
+          <div>
+            <p>
+              This feature adds the Canvas ID for each sub-account. This helps
+              when needing to look-up the values for API calls.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Show SIS Account ID</summary>
+          <div>
+            <p>
+              This feature adds the SIS ID for each sub-account. This helps when
+              needing to look-up the values for SIS Imports and/or API calls.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="enrollment-terms">Terms</h3>
+
+        <p>
+          The following features are mods that apply to the Terms page in the
+          admin accounts.
+        </p>
+
+        <details>
+          <summary>Show the Canvas Term ID</summary>
+          <div>
+            <p>
+              This feature adds the Canvas term ID to each of the terms. This
+              helps admin if they need the term ID for API calls.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="sis-imports">SIS Imports</h3>
+
+        <p>
+          The following features are mods that apply to the SIS Imports in the
+          admin accounts.
+        </p>
+
+        <details>
+          <summary>Add SIS History Log</summary>
+          <div>
+            <p>
+              This feature adds a log for past SIS Imports. This allows admin to
+              review past imports.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
       </section>
     </main>
     <footer>
