@@ -118,6 +118,17 @@ body > main > section:nth-of-type(even) {
   background-color: rgb(236, 236, 236);
 }
 
+section > section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body > main section > details {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+
 body > main h2,
 body > main h3,
 body > main h4 {
