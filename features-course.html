@@ -28,96 +28,513 @@
         <p>The following features are mods to areas within a Canvas course.</p>
         <ul>
           <li>
-            Global Course Mods
-            <ul>
-              <li>Make course header sticky</li>
-            </ul>
+            <a href="#global-course">Global Course Mods</a>
           </li>
           <li>
-            Course Home Page
-            <ul>
-              <li>Add course statistics button</li>
-            </ul>
+            <a href="#home">Course Home Page</a>
           </li>
           <li>
-            Modules
-            <ul>
-              <li>Add "Jump to Module" feature</li>
-            </ul>
+            <a href="#modules">Modules</a>
           </li>
           <li>
-            People/Users
-            <ul>
-              <li>Add button to export users to CSV*#</li>
-              <li>Add hide inactive users feature</li>
-              <li>Add section filter*</li>
-              <li>Add column sort buttons</li>
-            </ul>
+            <a href="#people">People/Users</a>
           </li>
           <li>
-            Groups
-            <ul>
-              <li>Add button to export groups to CSV*#</li>
-            </ul>
+            <a href="#groups">Groups</a>
           </li>
           <li>
-            User
-            <ul>
-              <li>Add button to export access report to CSV</li>
-            </ul>
+            <a href="#user">User</a>
           </li>
           <li>
-            SpeedGrader
-            <ul>
-              <li>
-                Convert text resembling links (begins with https:// or https://)
-                to a hyperlink in the comments
-              </li>
-              <li>Change the draft comment indicator from "*" to "DRAFT"</li>
-            </ul>
+            <a href="#speedgrader">SpeedGrader</a>
           </li>
           <li>
-            Statistics
-            <ul>
-              <li>Add course reports*</li>
-            </ul>
+            <a href="#statistics">Statistics</a>
           </li>
           <li>
-            Assignments
-            <ul>
-              <li>
-                Add button to load assignment details to list of assignments*
-              </li>
-              <li>Include Turnitin check with assignment details*</li>
-              <li>Add button to export grades on assignment page*</li>
-              <li>Add rubric used for grading indicator on assignment page*</li>
-            </ul>
+            <a href="#assignments">Assignments</a>
           </li>
           <li>
-            Discussions
-            <ul>
-              <li>Add button to export grades on discussion page*</li>
-            </ul>
+            <a href="#discussions">Discussions</a>
           </li>
           <li>
-            Rubrics
-            <ul>
-              <li>Add drag-and-drop criteria rows feature</li>
-              <li>Add import rubric criteria feature*</li>
-              <li>Add rubric associations report on rubric page*</li>
-            </ul>
+            <a href="#rubrics">Rubrics</a>
           </li>
           <li>
-            Sections
-            <ul>
-              <li>Add section reports*</li>
-            </ul>
+            <a href="#sections">Sections</a>
           </li>
         </ul>
+      </section>
+
+      <section>
+        <h3 id="global-course">Global Course Mods</h3>
+
         <p>
-          * - <em>Uses the Canvas LMS REST API</em><br />
-          # - <em>Requires course admin permissions</em>
+          The following features are mods that apply to most/all areas of a
+          course.
         </p>
+
+        <details>
+          <summary>Enable sticky course header</summary>
+          <div>
+            <p>
+              This makes it so the course header remains sticky at the top. This
+              is to help make it easy to know what course you are in even when
+              scrolling down the page.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="home">Course Home Page</h3>
+
+        <p>
+          The following features are mods that apply to the home page in a
+          course.
+        </p>
+
+        <details>
+          <summary>Add course statistics button</summary>
+          <div>
+            <p>
+              This feature adds a button to the course home page that will link
+              to the course statistics page. Since the custom course reports are
+              added on this page, it will help to make them more easily
+              accessible.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="modules">Modules</h3>
+
+        <p>
+          The following features are mods that apply to the Module page in a
+          course.
+        </p>
+
+        <details>
+          <summary>Add "Jump to Module" feature</summary>
+          <div>
+            <p>
+              This feature adds a list of links to each of the modules before
+              the first module. This also adds a back to top link under each
+              module. This will help with quicker navigation to the module that
+              a user wants to get to, especially when there is a long list of
+              module content.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="people">People/Users</h3>
+
+        <p>
+          The following features are mods that apply to the People/Users page in
+          a course.
+        </p>
+
+        <details>
+          <summary>Add export users button</summary>
+          <div>
+            <p>
+              This feature will add a button to allow an instructor/admin to
+              export the list of users.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+            <p>
+              <em>Requires course admin permissions to use this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add hide inactive users feature</summary>
+          <div>
+            <p>
+              This feature allows inactive users to be hidden from view in the
+              list of People. When enabled, it will default to have inactive
+              users hidden. You can click the checkbox to make it so inactive
+              users are visible again when needed.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add section filter</summary>
+          <div>
+            <p>
+              This feature adds a section filter to the list of users in a
+              course.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add column sort buttons</summary>
+          <div>
+            <p>
+              This feature adds the ability to sort the table of users in a
+              course.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="groups">Groups</h3>
+
+        <p>
+          The following features are mods that apply to the Groups page in a
+          course.
+        </p>
+
+        <details>
+          <summary>Add export groups button</summary>
+          <div>
+            <p>
+              This feature adds and export button to the group set panels. This
+              will make it easier for users to review group memberships in bulk
+              and it provides the data that is in the format compatible with the
+              import feature.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+            <p>
+              <em>Requires course admin permissions to use this feature.</em>
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="user">User</h3>
+
+        <p>
+          The following features are mods that apply to the User page in a
+          course.
+        </p>
+
+        <details>
+          <summary>Add export access report button</summary>
+          <div>
+            <p>
+              This feature adds an export button on the user's access report
+              within a Canvas course. This will download the data from the table
+              in a CSV file.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="speedgrader">SpeedGrader</h3>
+
+        <p>
+          The following features are mods that apply to the SpeedGrader page in
+          a course.
+        </p>
+
+        <details>
+          <summary>Convert text-based links</summary>
+          <div>
+            <p>
+              This feature replaces text based links (begins with https:// or
+              https://) with anchor elements to make them clickable links.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Modify draft comment indicator</summary>
+          <div>
+            <p>
+              This feature replaces the current draft comment indicator with one
+              that visually stands out more. The "*" is replaced with "DRAFT".
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="statistics">Statistics</h3>
+
+        <p>
+          The following features are mods that apply to the Statistics page in a
+          course.
+        </p>
+
+        <details>
+          <summary>Add course reports</summary>
+          <div>
+            <p>
+              This feature loads in a series of custom reports on the course
+              statistics page. This will help with pulling data about the course
+              for review. The data can be viewed in the results table for each
+              report and/or downloaded to CSV so the user can manipulate/use the
+              data further in another application/script.
+            </p>
+            <p>Current Reports:</p>
+            <ul>
+              <li>Assignment Details</li>
+              <li>Submission Details</li>
+              <li>Grading To Do Report</li>
+              <li>Missing Rubric Grade</li>
+              <li>Grade History Report</li>
+              <li>Quiz Details</li>
+              <li>Discussion Details</li>
+              <li>Discussion Replies Details</li>
+              <li>Announcement Details</li>
+              <li>Page Details</li>
+              <li>Modules Progress Report</li>
+              <li>Enrollment Report</li>
+              <li>User Access Report</li>
+            </ul>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="assignments">Assignments</h3>
+
+        <p>
+          The following features are mods that apply to the Assignments page in
+          a course.
+        </p>
+
+        <details>
+          <summary>Add load assignment details button</summary>
+          <div>
+            <p>
+              The feature will allow a user to load in additional details about
+              assignments that are useful for a quick audit of assignment
+              settings.
+            </p>
+            <p>
+              There is an additional option to include a check for Turnitin
+              being enabled for an assignment.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add export grades button to assignment page</summary>
+          <div>
+            <p>
+              This feature adds button(s) on the assignment page to export
+              grades. By default it will add the button "Export Grades" if it
+              sees the ratio of graded assignment submissions on the right-hand
+              side. By clicking this button, it will get the submissions for the
+              assignments and export the data in a CSV file. It will include
+              rubric scores too, if available. All data for a single submission
+              will be on one row.
+            </p>
+            <p>
+              If it also sees a rubric on the assignment page, it will add a
+              second button to "Export Grades by Criteria". This will also get
+              all the submissions for the assignment. However, now each row will
+              include the submission details and one of the criteria details at
+              a time. This will result in repeated submission details data, but
+              avoids the need to keep scrolling to the right to view all of the
+              criteria details.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Add rubric used for grading indicator on assignment page
+          </summary>
+          <div>
+            <p>
+              This feature adds an indicator to let the instructor know if the
+              associated rubric is set to use for grading or not. If changes are
+              made the indicator will update to let the user know to refresh the
+              page to update the indicator.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="discussions">Discussions</h3>
+
+        <p>
+          The following features are mods that apply to the Discussions page in
+          a course.
+        </p>
+
+        <details>
+          <summary>Add export grades button to discussion page</summary>
+          <div>
+            <p>
+              This feature adds the ability to export grades for a discussion
+              board.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="rubrics">Rubrics</h3>
+
+        <p>
+          The following features are mods that apply to a Rubrics page in a
+          course.
+        </p>
+
+        <details>
+          <summary>Add a search feature</summary>
+          <div>
+            <p>
+              This feature adds a search bar to the rubrics page. This will make
+              it easier to find rubrics when there is a long list.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add a load details button</summary>
+          <div>
+            <p>
+              This feature allows the user to load key details about the rubrics
+              to help with quick audits of the settings.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add drag-and-drop criteria rows feature</summary>
+          <div>
+            <p>
+              This feature allows the user to drag and drop rubric rows when a
+              rubric is in an editing state. If you drag a row up from its
+              current position, it will push the row it is dropped on down. If
+              you drag a row down from its current position, it will push the
+              row it is dropped on up.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add import rubric criteria feature</summary>
+          <div>
+            <p>
+              This feature allows a user to import the rubric details when
+              adding/editing a rubric. The user will need to follow the proper
+              format and can use the sample file as a reference point. They will
+              need to enter/paste the data in the import dialog with the column
+              values separated by a tab. When the data is formatted properly it
+              will load the details into the edit rubric preview. This allows
+              the user to review the imported data and how it was added to the
+              rubric before creating the rubric. This also allows the user to
+              add additional criteria and/or import outcomes.
+            </p>
+
+            <p>There are two import options:</p>
+            <ul>
+              <li>
+                Import: This will keep any exisiting criteria in the rubric and
+                add new rows to the end for the new criteria that are imported.
+              </li>
+              <li>
+                Import and Replace: This will remove any existing criteria from
+                the rubric and add rows for the new criteria that are imported.
+              </li>
+            </ul>
+
+            <p>
+              This feature also adds an export criteria button next to the
+              "Import Details" button. This will allow the user to export the
+              current criteria in the edit view to a tab separated values file
+              that is in the proper format for importing data. This is useful if
+              a user has a rubric started already and is looking to add more
+              criteria and wants to organize the rubric order all at once,
+              especially when working with outcomes. It can also be used to
+              allow the user to get the data from one rubric to use as a
+              starting template for a new rubric and/or to 'make a copy'.
+            </p>
+
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Add rubric associations report on rubric page</summary>
+          <div>
+            <p>
+              This feature allows the user to load in details about assignment
+              associations.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <h3 id="sections">Sections</h3>
+
+        <p>
+          The following features are mods that apply to the Sections settings
+          page in a course.
+        </p>
+
+        <details>
+          <summary>Add section reports</summary>
+          <div>
+            <p>
+              This feature loads in a series of custom reports on the course
+              sections page. This will help with pulling data about the section
+              for review. The data can be viewed in the results table for each
+              report and/or downloaded to CSV so the user can manipulate/use the
+              data further in another application/script.
+            </p>
+            <p>Current Reports:</p>
+            <ul>
+              <li>Submission Details</li>
+              <li>Grading To Do Report</li>
+              <li>Missing Rubric Grade</li>
+              <li>Grade History Report</li>
+              <li>Modules Progress Report</li>
+              <li>Enrollment Report</li>
+              <li>User Access Report</li>
+            </ul>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+          </div>
+        </details>
       </section>
     </main>
     <footer>
