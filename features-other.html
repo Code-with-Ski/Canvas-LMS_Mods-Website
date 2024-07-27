@@ -85,6 +85,11 @@
               menu. It also shows the word "TEST" under the logo in the global
               navigation menu.
             </p>
+            <img
+              class="screenshot"
+              alt="Dashboard on test server showing modified logo background color and addition of 'TEST' label under the logo"
+              src="images/feature-screenshots/test-dashboard-global-nav-indicator.png"
+            />
           </div>
         </details>
 
@@ -96,6 +101,11 @@
               menu. It also shows the word "BETA" under the logo in the global
               navigation menu.
             </p>
+            <img
+              class="screenshot"
+              alt="Dashboard on beta server showing modified logo background color and addition of 'BETA' label under the logo"
+              src="images/feature-screenshots/beta-dashboard-global-nav-indicator.png"
+            />
           </div>
         </details>
       </section>
@@ -113,6 +123,11 @@
               This feature adds a link to the "All Courses" page for a user to
               the dashboard. It is added in the dashboard header actions div.
             </p>
+            <img
+              class="screenshot"
+              alt="Dashboard with a button to 'See All Courses'"
+              src="images/feature-screenshots/dashboard-see-all-courses.png"
+            />
           </div>
         </details>
 
@@ -123,12 +138,21 @@
           <div>
             <p>
               This feature overlays the user's course grade information on each
-              course card. This is to provide a similar feature to what user's
-              see when viewing courses in the Canvas mobile app.
+              course card where they are a student. This is to provide a similar
+              feature to what user's see when viewing courses in the Canvas
+              mobile app. It will show a lock on courses where the current
+              course grade information is hidden from students. It will show
+              'N/A' when a current course grade is not yet available for the
+              student.
             </p>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Dashboard with grade overlays on the cards"
+              src="images/feature-screenshots/dashboard-grade-overlay.png"
+            />
           </div>
         </details>
       </section>
@@ -146,8 +170,14 @@
             <p>
               This feature adds the ability to filter the courses on the All
               Courses page. It currently includes filters for the favorite,
-              term, enrolled as, and published columns.
+              term, enrolled as, and published columns. The filters will be
+              disabled if there isn't more than one option.
             </p>
+            <img
+              class="screenshot"
+              alt="All courses list with arrows pointing to drop-down filter options."
+              src="images/feature-screenshots/all-courses-column-filters.png"
+            />
           </div>
         </details>
 
@@ -157,8 +187,14 @@
             <p>
               This feature adds the ability to search the courses on the All
               Courses page. It adds search bars to the course and nickname
-              columns.
+              columns. The search field will be disabled when there aren't
+              values to search.
             </p>
+            <img
+              class="screenshot"
+              alt="All courses list with arrows pointing to search fields for filtering."
+              src="images/feature-screenshots/all-courses-column-searches.png"
+            />
           </div>
         </details>
 
@@ -167,8 +203,14 @@
           <div>
             <p>
               This feature adds the ability to sort the columns on the All
-              Courses page.
+              Courses page. The sort button is disabled for columns where
+              sorting wouldn't affect it (only one row or no values).
             </p>
+            <img
+              class="screenshot"
+              alt="All courses list with arrows pointing to the column headers that were updated."
+              src="images/feature-screenshots/all-courses-column-sorts.png"
+            />
           </div>
         </details>
       </section>
@@ -189,8 +231,17 @@
             <div>
               <p>
                 This feature adds a "View Grades" button on the right-hand side
-                of a user's profile.
+                of a user's profile. This links to the user's grades page which
+                shows a list of grades for courses the user is actively taking
+                as a student and/or teaching. For courses the user is teaching,
+                the grade shown is the class average and includes a link to the
+                Student Interactions report.
               </p>
+              <img
+                class="screenshot"
+                alt="User profile page showing added 'View Grades' button"
+                src="images/feature-screenshots/user-profile-view-grades.png"
+              />
             </div>
           </details>
         </section>
