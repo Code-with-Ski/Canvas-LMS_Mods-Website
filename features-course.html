@@ -381,23 +381,204 @@
             </p>
             <p>Current Reports:</p>
             <ul>
-              <li>Assignment Details</li>
-              <li>Submission Details</li>
-              <li>Grading To Do Report</li>
-              <li>Missing Rubric Grade</li>
-              <li>Grade History Report</li>
-              <li>Quiz Details</li>
-              <li>Discussion Details</li>
-              <li>Discussion Replies Details</li>
-              <li>Announcement Details</li>
-              <li>Page Details</li>
-              <li>Modules Progress Report</li>
-              <li>Enrollment Report</li>
-              <li>User Access Report</li>
+              <li>
+                Assignment Details
+                <ul>
+                  <li>
+                    Table data includes the following: assignment ID, name,
+                    description HTML, description text, due date, submission
+                    types, grading type, points possible, rubric grading, if
+                    omitted from final grade, if needs grading, if published,
+                    allowed attempts, if peer reviews, if anonymous grading, and
+                    if muted.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Submission Details
+                <ul>
+                  <li>
+                    Table data includes the following: submission ID, user ID,
+                    student name, assignment ID, assignment name, attempt,
+                    grade, raw score, points possible, submission type,
+                    submitted at, graded at, if excused, if missing, workflow
+                    state, submission comments, and associated rubric. If
+                    applicable, it includes the rubric score details.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific assignment, and submission states to include.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Grading To Do Report
+                <ul>
+                  <li>
+                    Table data includes the following: submission ID, user ID,
+                    student name, assignment ID, assignment name, SpeedGrader
+                    link, attempt, current grade, current score, points
+                    possible, if omitted from final grade, submission type,
+                    submitted at, days since submission, due date, days since
+                    due date, min of the days since, if excused, if missing,
+                    workflow state, and submission comments.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific assignment.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Missing Rubric Grade
+                <ul>
+                  <li>
+                    Table data includes the following: submission ID, user ID,
+                    student name, assignment ID, assignment name, SpeedGrader
+                    link, attempt, current grade, current score, points
+                    possible, if omitted from final grade, if rubric is used for
+                    grading, submission type, submitted at, if excused, if
+                    missing, and submission comments.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific assignment.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Grade History Report
+                <ul>
+                  <li>
+                    Table data includes the following: submission ID, user ID,
+                    student name, assignment ID, assignment name, SpeedGrader
+                    link, submitted at, workflow state, if grade matches current
+                    submission, grade, score, submission type, graded at, grader
+                    id, and grader name.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific assignment, and select all students, specific
+                    students, or students of a specific enrollment status.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Quiz Details
+                <ul>
+                  <li>
+                    Table data includes the following: quiz ID, title, quiz
+                    type, question count, points possible, if published, if has
+                    access code, if shuffle answers, time limit, allowed
+                    attempts, if show correct answers, if one question at a
+                    time, if requires LockDown Browser, and if requires LockDown
+                    Browser Monitor.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Discussion Details
+                <ul>
+                  <li>
+                    Table data includes the following: discussion ID, title,
+                    message, author, posted at, last reply at, if requires
+                    initial post, posts count, unread posts count, if published,
+                    if locked, discussion type, and assignment ID.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Discussion Replies Details
+                <ul>
+                  <li>
+                    Table data includes the following: author ID, author name,
+                    post ID, post parent ID, discussion title, message body
+                    HTML, message body text, created at, updated at, message
+                    type, and number of replies to discussion.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific discussion board.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Announcement Details
+                <ul>
+                  <li>
+                    Table data includes the following: announcement ID, title,
+                    message, author ID, author, created at, delayed post at,
+                    last reply at, if requires initial post, posts count, unread
+                    posts count, if locked, and if allows rating.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Page Details
+                <ul>
+                  <li>
+                    Table data includes the following: page ID, title, URL,
+                    created at, updated at, if published, if front page, and
+                    body.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Modules Progress Report
+                <ul>
+                  <li>
+                    Table data includes the following: user ID, name, module ID,
+                    module name, module item ID, module item name, requirement
+                    type, status, module percentage complete, and total
+                    percentage complete.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Enrollment Report
+                <ul>
+                  <li>
+                    Table data includes the following: enrollment ID, section
+                    ID, section SIS ID, section name, user ID, user SIS ID, user
+                    sortable name, user display name, user login ID, enrollment
+                    state, enrollment type, enrollment role ID, enrollment role,
+                    created at, updated at, last activity at, total activity
+                    time, current score, current grade, final score, final
+                    grade, last attended at, limit access to section, SIS import
+                    ID, start at, and end at.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select enrollment
+                    states to include.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                User Access Report
+                <ul>
+                  <li>
+                    Table data includes the following: asset access ID, asset
+                    code, asset group code, asset category, asset class name,
+                    user ID, user name, membership type, context ID, context
+                    type, content name, content display name, last access, first
+                    access, updated at, times viewed, times participated, and
+                    action level.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all users,
+                    specific users, or users of a specific enrollment state.
+                  </li>
+                </ul>
+              </li>
             </ul>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Custom course reports on the course statistics page"
+              src="images/feature-screenshots/course-statistics-course-reports.png"
+            />
           </div>
         </details>
       </section>
@@ -416,7 +597,10 @@
             <p>
               The feature will allow a user to load in additional details about
               assignments that are useful for a quick audit of assignment
-              settings.
+              settings. This includes the submission types, if it affects the
+              final grade, and if it has an associated rubric. If it has an
+              associated rubric, it also checks if it is used for grading and if
+              any of the criteria are outcomes.
             </p>
             <p>
               There is an additional option to include a check for Turnitin
@@ -425,6 +609,16 @@
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Load assignment details button on the list of assignments"
+              src="images/feature-screenshots/course-assignments-load-details-button.png"
+            />
+            <img
+              class="screenshot"
+              alt="List of assignments showing the additional loaded details"
+              src="images/feature-screenshots/course-assignments-load-details-example.png"
+            />
           </div>
         </details>
 
@@ -452,6 +646,11 @@
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Export grades buttons on an assignment page"
+              src="images/feature-screenshots/course-assignment-export-grades.png"
+            />
           </div>
         </details>
 
@@ -469,6 +668,11 @@
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Indicator on rubric that shows it is set to be used for grading"
+              src="images/feature-screenshots/course-assignment-rubric-used-for-grading.png"
+            />
           </div>
         </details>
       </section>
@@ -486,12 +690,30 @@
           <div>
             <p>
               This feature adds the ability to export grades for a discussion
-              board.
+              board. By default it will add the button "Export Grades" if it is
+              an assignment. By clicking this button, it will get the
+              submissions and export the data in a CSV file. It will include
+              rubric scores too, if available. All data for a single submission
+              will be on one row.
+            </p>
+            <p>
+              If the discussion is an assignment with a rubric, it will add a
+              second button to "Export Grades by Criteria". This will also get
+              all the submissions. However, now each row will include the
+              submission details and one of the rubric criteria details at a
+              time. This will result in repeated submission details data, but
+              avoids the need to keep scrolling to the right to view all of the
+              criteria details.
             </p>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
           </div>
+          <img
+            class="screenshot"
+            alt="Export grades button loaded above discussion"
+            src="images/feature-screenshots/course-discussion-export-grades.png"
+          />
         </details>
       </section>
 
@@ -510,6 +732,12 @@
               This feature adds a search bar to the rubrics page. This will make
               it easier to find rubrics when there is a long list.
             </p>
+            <p>This is designed for the classic course rubrics page.</p>
+            <img
+              class="screenshot"
+              alt="Search feature added to course rubrics page"
+              src="images/feature-screenshots/course-rubrics-search.png"
+            />
           </div>
         </details>
 
@@ -518,11 +746,24 @@
           <div>
             <p>
               This feature allows the user to load key details about the rubrics
-              to help with quick audits of the settings.
+              to help with quick audits of the settings. The details include the
+              context type, if it has assignment associations, and if it has
+              outcomes criteria.
             </p>
+            <p>This is designed for the classic course rubrics page.</p>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Load details button on course rubrics page"
+              src="images/feature-screenshots/course-rubrics-load-details.png"
+            />
+            <img
+              class="screenshot"
+              alt="Example loaded details on course rubrics page"
+              src="images/feature-screenshots/course-rubrics-load-details-example.png"
+            />
           </div>
         </details>
 
@@ -536,6 +777,17 @@
               you drag a row down from its current position, it will push the
               row it is dropped on up.
             </p>
+            <p>This is designed for the classic course rubric edit page.</p>
+            <img
+              class="screenshot"
+              alt="Shows row that will be moved currently at the bottom of the rubric"
+              src="images/feature-screenshots/course-rubric-edit-row-bottom.png"
+            />
+            <img
+              class="screenshot"
+              alt="Shows row after it has been moved to the top of the rubric."
+              src="images/feature-screenshots/course-rubric-edit-row-top.png"
+            />
           </div>
         </details>
 
@@ -553,7 +805,6 @@
               rubric before creating the rubric. This also allows the user to
               add additional criteria and/or import outcomes.
             </p>
-
             <p>There are two import options:</p>
             <ul>
               <li>
@@ -565,7 +816,6 @@
                 the rubric and add rows for the new criteria that are imported.
               </li>
             </ul>
-
             <p>
               This feature also adds an export criteria button next to the
               "Import Details" button. This will allow the user to export the
@@ -577,10 +827,20 @@
               allow the user to get the data from one rubric to use as a
               starting template for a new rubric and/or to 'make a copy'.
             </p>
-
+            <p>This is designed for the classic course rubric edit page.</p>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Import and export criteria buttons on the edit rubric page"
+              src="images/feature-screenshots/course-rubric-edit-import-and-export-buttons.png"
+            />
+            <img
+              class="screenshot"
+              alt="Import rubric criteria dialog"
+              src="images/feature-screenshots/course-rubric-edit-import-dialog.png"
+            />
           </div>
         </details>
 
@@ -588,12 +848,21 @@
           <summary>Add rubric associations report on rubric page</summary>
           <div>
             <p>
-              This feature allows the user to load in details about assignment
-              associations.
+              This feature allows the user to load in details about rubric
+              associations. Available data loaded in table includes the
+              following: rubric association ID, associated item ID, associated
+              item type, if it is used for grading, purpose, if it hides score
+              total, if it hides points, and if it hides outcome results.
             </p>
+            <p>This is designed for the classic course rubric page.</p>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Rubric associations report on course rubrics page"
+              src="images/feature-screenshots/course-rubric-rubric-associations-report.png"
+            />
           </div>
         </details>
       </section>
@@ -618,17 +887,131 @@
             </p>
             <p>Current Reports:</p>
             <ul>
-              <li>Submission Details</li>
-              <li>Grading To Do Report</li>
-              <li>Missing Rubric Grade</li>
-              <li>Grade History Report</li>
-              <li>Modules Progress Report</li>
-              <li>Enrollment Report</li>
-              <li>User Access Report</li>
+              <li>
+                Submission Details
+                <ul>
+                  <li>
+                    Table data includes the following: submission ID, user ID,
+                    student name, assignment ID, assignment name, attempt,
+                    grade, raw score, points possible, submission type,
+                    submitted at, graded at, if excused, if missing, workflow
+                    state, submission comments, and associated rubric. If
+                    applicable, it includes the rubric score details.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific assignment, and submission states to include.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Grading To Do Report
+                <ul>
+                  <li>
+                    Table data includes the following: submission ID, user ID,
+                    student name, assignment ID, assignment name, SpeedGrader
+                    link, attempt, current grade, current score, points
+                    possible, if omitted from final grade, submission type,
+                    submitted at, days since submission, due date, days since
+                    due date, min of the days since, if excused, if missing,
+                    workflow state, and submission comments.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific assignment.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Missing Rubric Grade
+                <ul>
+                  <li>
+                    Table data includes the following: submission ID, user ID,
+                    student name, assignment ID, assignment name, SpeedGrader
+                    link, attempt, current grade, current score, points
+                    possible, if omitted from final grade, if rubric is used for
+                    grading, submission type, submitted at, if excused, if
+                    missing, and submission comments.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific assignment.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Grade History Report
+                <ul>
+                  <li>
+                    Table data includes the following: submission ID, user ID,
+                    student name, assignment ID, assignment name, SpeedGrader
+                    link, submitted at, workflow state, if grade matches current
+                    submission, grade, score, submission type, graded at, grader
+                    id, and grader name.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all or a
+                    specific assignment, and select all students, specific
+                    students, or students of a specific enrollment status.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Modules Progress Report
+                <ul>
+                  <li>
+                    Table data includes the following: user ID, name, module ID,
+                    module name, module item ID, module item name, requirement
+                    type, status, module percentage complete, and total
+                    percentage complete.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Enrollment Report
+                <ul>
+                  <li>
+                    Table data includes the following: enrollment ID, section
+                    ID, section SIS ID, section name, user ID, user SIS ID, user
+                    sortable name, user display name, user login ID, enrollment
+                    state, enrollment type, enrollment role ID, enrollment role,
+                    created at, updated at, last activity at, total activity
+                    time, current score, current grade, final score, final
+                    grade, last attended at, limit access to section, SIS import
+                    ID, start at, and end at.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select enrollment
+                    states to include.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                User Access Report
+                <ul>
+                  <li>
+                    Table data includes the following: asset access ID, asset
+                    code, asset group code, asset category, asset class name,
+                    user ID, user name, membership type, context ID, context
+                    type, content name, content display name, last access, first
+                    access, updated at, times viewed, times participated, and
+                    action level.
+                  </li>
+                  <li>
+                    Report option(s) include the following: select all users,
+                    specific users, or users of a specific enrollment state.
+                  </li>
+                </ul>
+              </li>
             </ul>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Custom section reports added below the section details"
+              src="images/feature-screenshots/course-section-section-reports.png"
+            />
           </div>
         </details>
       </section>
