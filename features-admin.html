@@ -80,8 +80,30 @@
               This feature adds some quick access items to the Admin flyout
               menu. It includes a quick access to the course and people search
               with account, term, and other search options. It also provides
-              direct links to certain pages in the admin area.
+              direct links to certain pages in the admin area. The accounts and
+              terms in the select menu are loaded in when opened.
             </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+            <img
+              style="max-width: 300px; display: block"
+              class="screenshot"
+              alt="Admin quick access options in the admin flyout menu on the global navigation."
+              src="images/feature-screenshots/global-nav-admin-quick-access.png"
+            />
+            <img
+              style="max-width: 400px; display: block"
+              class="screenshot"
+              alt="Admin quick access account select menu example"
+              src="images/feature-screenshots/global-nav-admin-quick-access-account-select.png"
+            />
+            <img
+              style="max-width: 400px"
+              class="screenshot"
+              alt="Admin quick access term select menu example in course search section"
+              src="images/feature-screenshots/global-nav-admin-quick-access-term-select.png"
+            />
           </div>
         </details>
       </section>
@@ -531,6 +553,11 @@
               This feature adds a search bar to the Question Banks page to make
               it easier to filter the list question banks.
             </p>
+            <img
+              class="screenshot"
+              alt="Search box on the question banks page"
+              src="images/feature-screenshots/admin-question-banks-search.png"
+            />
           </div>
         </details>
       </section>
@@ -550,6 +577,11 @@
               This feature adds the Canvas ID for each sub-account. This helps
               when needing to look-up the values for API calls.
             </p>
+            <img
+              class="screenshot"
+              alt="Account IDs added under each account name"
+              src="images/feature-screenshots/admin-subaccounts-account-ids.png"
+            />
           </div>
         </details>
 
@@ -563,6 +595,11 @@
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="Account IDs added under each account name"
+              src="images/feature-screenshots/admin-subaccounts-account-ids.png"
+            />
           </div>
         </details>
       </section>
@@ -582,6 +619,11 @@
               This feature adds the Canvas term ID to each of the terms. This
               helps admin if they need the term ID for API calls.
             </p>
+            <img
+              class="screenshot"
+              alt="Canvas term ID added to each shown term"
+              src="images/feature-screenshots/admin-terms-canvas-id.png"
+            />
           </div>
         </details>
       </section>
@@ -599,11 +641,23 @@
           <div>
             <p>
               This feature adds a log for past SIS Imports. This allows admin to
-              review past imports.
+              review past imports. The log can be updated to only show certain
+              workflow states and/or imports that occurred within a certain
+              timeframe. Some of the data included is the SIS import ID, when it
+              started and completed, how long it took to complete, the workflow
+              state, the percentage complete, the number of changes made, the
+              user that performed the import, and the settings used for the
+              import. If there are errors and/or warnings it will include those
+              messages.
             </p>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
             </p>
+            <img
+              class="screenshot"
+              alt="SIS Import log showing details about recent SIS Imports"
+              src="images/feature-screenshots/admin-sis-import-log.png"
+            />
           </div>
         </details>
       </section>
