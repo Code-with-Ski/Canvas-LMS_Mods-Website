@@ -175,6 +175,7 @@ img.screenshot {
   border: 1px solid black;
   border-radius: 10px;
   width: 80%;
+  max-width: 750px;
   margin-bottom: 1rem;
 }
 
