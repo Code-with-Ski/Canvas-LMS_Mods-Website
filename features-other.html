@@ -213,6 +213,53 @@
             />
           </div>
         </details>
+
+        <details>
+          <summary>Enable All Courses simple search</summary>
+          <div>
+            <p>
+              This adds a simple search functionality to the All Courses list.
+              The button to activate it is found in the upper-right. The search
+              will look for case insensitve matches to the given search value.
+              The search results will highlight the matching search term/phrase.
+            </p>
+            <p>
+              The All Courses simple search includes an option to look at
+              current, past, and/or future enrollments based on the All Courses
+              list(s). To narrow the courses that are searched further, the
+              column search/filter options can be used to only show certain
+              courses. The All Courses simple search will only search courses
+              that are still shown.
+            </p>
+            <p>
+              It currently supports searching the following content areas (if
+              selected): syllabus body, pages (title and body), assignments
+              (title and body), discussion topics (title and body), announcement
+              topics (title and body), file names, and module item names. The
+              Canvas API is used to get the selected items and checck if the
+              search value appears within them. Only data that the user has
+              permission to view will show in the results.
+            </p>
+            <p>
+              <em>Uses the Canvas LMS REST API to provide this feature.</em>
+            </p>
+            <img
+              class="screenshot"
+              alt="Simple search button on All Courses page"
+              src="images/feature-screenshots/all-courses-simple-search-button.png"
+            />
+            <img
+              class="screenshot"
+              alt="All Courses simple search modal when it is opened initially"
+              src="images/feature-screenshots/all-courses-simple-search-initial-open.png"
+            />
+            <img
+              class="screenshot"
+              alt="Example all courses simple search results"
+              src="images/feature-screenshots/all-courses-simple-search-results.png"
+            />
+          </div>
+        </details>
       </section>
       <section>
         <h3 id="user">User Mods</h3>
