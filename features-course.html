@@ -98,10 +98,16 @@
               This adds a simple search functionality to a course. The link to
               activate it is found on the course navigation menu. The search
               will look for case insensitve matches to the given search value.
-              It currently searches assignment names/descriptions, discussion
-              board titles/topics, announcement titles/topics, and page
-              titles/content. The search results will highlight the matching
-              search term.
+              The search results will highlight the matching search term/phrase.
+            </p>
+            <p>
+              It currently supports searching the following content areas (if
+              selected): syllabus body, pages (title and body), assignments
+              (title and body), discussion topics (title and body), announcement
+              topics (title and body), file names, and module item names. The
+              Canvas API is used to get the selected items and checck if the
+              search value appears within them. Only data that the user has
+              permission to view will show in the results.
             </p>
             <p>
               <em>Uses the Canvas LMS REST API to provide this feature.</em>
@@ -109,12 +115,12 @@
             <img
               class="screenshot"
               alt="Simple search modal when it is opened initially"
-              src="images/feature-screenshots/simple-search-modal.png"
+              src="images/feature-screenshots/course-simple-search-initial-open.png"
             />
             <img
               class="screenshot"
               alt="Example simple search results"
-              src="images/feature-screenshots/simple-search-result-example.png"
+              src="images/feature-screenshots/course-simple-search-results.png"
             />
           </div>
         </details>
