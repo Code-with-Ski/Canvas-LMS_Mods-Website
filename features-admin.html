@@ -313,13 +313,14 @@
               <summary>Add enrollment filters</summary>
               <div>
                 <p>
-                  Adds filters based on the term, enrollment state, and course
-                  state.
+                  This adds select filters for the term, enrollment state,
+                  course state, and role. There are also search filters for the
+                  course name and course code (if applicable).
                 </p>
                 <img
                   class="screenshot"
                   alt="Filters for the course enrollments"
-                  src="images/feature-screenshots/admin-people-user-enrollments-student-filters.png"
+                  src="images/feature-screenshots/admin-people-user-enrollments-course-filters.png"
                 />
               </div>
             </details>
@@ -353,6 +354,48 @@
                   class="screenshot"
                   alt="Canvas course code and ID below the course name"
                   src="images/feature-screenshots/admin-people-user-enrollments-student-course-code-and-id.png"
+                />
+              </div>
+            </details>
+
+            <details>
+              <summary>Enable Simple Search of Course Enrollments</summary>
+              <div>
+                <p>
+                  This adds a simple search functionality to the course
+                  enrollments box. The search will look for case insensitve
+                  matches to the given search value. The search results will
+                  highlight the matching search term/phrase.
+                </p>
+                <p>
+                  The course enrollments simple search is able to search the
+                  courses in which the user is enrolled. To narrow the courses
+                  that are searched further, the search/filter options can be
+                  used to only show certain courses. The course enrollments
+                  simple search will only search courses that are still shown.
+                </p>
+                <p>
+                  It currently supports searching the following content areas
+                  (if selected): syllabus body, pages (title and body),
+                  assignments (title and body), discussion topics (title and
+                  body), announcement topics (title and body), file names, and
+                  module item names. The Canvas API is used to get the selected
+                  items and checck if the search value appears within them. Only
+                  data that the user has permission to view will show in the
+                  results.
+                </p>
+                <p>
+                  <em>Uses the Canvas LMS REST API to provide this feature.</em>
+                </p>
+                <img
+                  class="screenshot"
+                  alt="Simple search button in the course enrollments box"
+                  src="images/feature-screenshots/admin-people-user-enrollments-course-simple-search-button.png"
+                />
+                <img
+                  class="screenshot"
+                  alt="Simple search dialog for the user course enrollments"
+                  src="images/feature-screenshots/admin-people-user-enrollments-simple-search-dialog.png"
                 />
               </div>
             </details>
